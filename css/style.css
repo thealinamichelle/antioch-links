@@ -1,0 +1,169 @@
+@import "resets.css";
+@import "form.css";
+@import "footer.css";
+@import "fonts.css";
+@import "settings.css";
+
+Body {
+	background: var(--paper);
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-family: sans-serif;
+	/*border:  solid 1px black;*/
+}
+
+header {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+	padding: 2rem;
+}
+
+main {
+	min-height: 100vh;
+}
+
+inner-column {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+}
+
+grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 10px;
+}
+cell {
+	display: block;
+	padding: 1rem 0.5rem 0 0.5rem;
+	transition: background-color 0.3s ease;
+}
+
+section {
+	padding: 10px 0px;
+}
+
+grid section {
+	/*	display: grid;
+	grid-template-rows: 4rem repeat(4, 2rem);
+	row-gap: 0.5rem;*/
+	overflow: hidden;
+}
+
+/*grid section:hover {
+  background-color: var(--warm); /* Change background
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+*/
+
+/*grid section a:not(h2){
+	font-size:1.1rem;
+	align-self: end;
+	padding-top: .5rem;
+}*/
+
+grid section h2 {
+	font-size: 1.7rem;
+	align-self: start;
+	padding-top: 0.5rem;
+}
+
+@media (min-width: 300px) {
+	grid section {
+		display: grid;
+		/*	grid-template-rows: 3rem repeat(4, 4rem);*/
+	}
+	grid section h2 {
+		font-size: 2rem;
+		align-self: start;
+	}
+	grid section a:not(h2) {
+		font-size: 1rem;
+		/*		padding-top: 2rem;*/
+	}
+}
+
+picture {
+	max-width: 90vw;
+}
+
+@media (min-width: 678px) {
+	grid {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	grid section {
+		grid-template-rows: 2.5rem repeat(4, 2rem);
+		/*		border: green solid 5px;*/
+	}
+
+	grid section a:not(h2) {
+		font-size: 1.1rem;
+		/*		padding-top: 1rem;*/
+	}
+
+	grid section h2 {
+		font-size: 1.6rem;
+		line-height: 0.9;
+	}
+
+	inner-column {
+		width: 90vw;
+	}
+
+	picture {
+		max-width: 60vw;
+	}
+}
+
+@media (min-width: 900px) {
+	display: grid;
+	grid-template-rows: 4rem repeat(4, 2rem);
+	row-gap: 0.5rem;
+	grid {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	grid section {
+		grid-template-rows: 4rem repeat(4, 3rem);
+		/*		border: yellow solid 5px;*/
+	}
+
+	grid section a:not(h2) {
+		font-size: 1.2rem;
+		/*		padding-top: 1.8rem;*/
+	}
+	grid section h2 {
+		font-size: 2rem;
+	}
+
+	inner-column {
+		width: 85vw;
+	}
+}
+
+/*BACKGROUND COLORS*/
+.one {
+	background: var(--plum);
+}
+
+.two {
+	background: var(--berry);
+}
+
+.three {
+	background: var(--lavi);
+}
+
+.four {
+	background: var(--bubblegum);
+}
+
+.five {
+	background: var(--peach);
+}

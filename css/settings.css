@@ -1,0 +1,26 @@
+html {
+	--plum: #b8655b;
+	--berry: #ad6491;
+	--lavi: #a85da6;
+	--bubblegum: #ae4045;
+	--peach: #ecd1f8;
+
+	--highlight: #f092f9;
+	--warm: #ef937b;
+	--fire: #ee5f3a;
+
+	--light: #ddc9ca;
+	--dark: #7572bf;
+
+	--paper: var(--light);
+	--ink: var(--dark);
+
+	--washi: rgba(232, 235, 253, 0.5);
+}
+
+@media (prefers-color-scheme: dark) {
+	html {
+		--paper: var(--dark);
+		--ink: var(--light);
+	}
+}

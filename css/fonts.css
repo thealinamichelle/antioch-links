@@ -1,0 +1,83 @@
+
+header, header a { 
+	font-family: sans-serif;
+	font-size: 4rem;
+}
+header a {
+	padding: 0;
+}
+
+header a:active {
+	background: rgba(164, 116, 136, 1.00); 
+	border-radius: 10px;
+}
+
+h1 {
+	color: var(--ink);
+}
+
+a, h2 { 
+	text-align: left;
+	padding-left: 10px;
+	color: var(--ink);
+ }
+
+h2 { 
+	font-family: Sans-Serif;
+	text-transform: capitalize;
+}
+
+a:not(header a){
+	display: block;
+	text-decoration: none;
+}
+
+a {
+	display: block;
+	text-decoration: none;
+	padding-bottom: 5px;
+}
+
+
+main a, footer a {
+	text-decoration: none;
+/*	border-bottom: 2px solid var(--washi);*/
+}
+
+cell{
+	border-bottom: 2px solid var(--washi)
+}
+/*section a:hover {
+	background-color: var(--paper);
+	border-bottom: 2px solid var(--warm);
+}*/
+
+cell:hover {
+  background-color: var(--paper);
+}
+
+/*
+a:active {
+	color: rgba(164, 116, 136, 1.00);
+	border-bottom: 2px solid var(--washi)
+	box-shadow: 0px 2px 0px 0px var(--fire);
+}*/		
+cell:active {
+	color: rgba(164, 116, 136, 1.00);
+	border-bottom: 2px solid var(--washi)
+	box-shadow: 0px 2px 0px 0px var(--fire);
+}	
+
+a:focus {
+	color: #C8C5B4;
+	background: #7DA6BF;
+}
+
+
+a[href^="../index.html"] {
+	background: none;
+}
+a[href^="https://youtu.be/tzE7P3KPi4I?t=20"] {
+	background: none;
+}	
+
