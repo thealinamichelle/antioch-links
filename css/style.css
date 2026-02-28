@@ -167,3 +167,7 @@ picture {
 .five {
 	background: var(--peach);
 }
+
+.six {
+	background: var(--deluge);
+}
